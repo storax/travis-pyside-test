@@ -11,9 +11,7 @@ PYSIDE_TGZ=PySide-${PYSIDE_VERSION}.tar.gz
 pip install wheel
 
 #PySide dependencies from http://pyside.readthedocs.org/en/latest/building/linux.html
-#Excluding libphonon-dev qtmobility-dev because the might not be useful
-#on travis
-sudo apt-get install cmake libqt4-dev libxml2-dev libxslt1-dev
+sudo apt-get install cmake libqt4-dev libxml2-dev libxslt1-dev libphonon-dev qtmobility-dev phonon-backend-vlc
 # Download PySide Source
 curl -O https://pypi.python.org/packages/source/P/PySide/${PYSIDE_TGZ}
 
