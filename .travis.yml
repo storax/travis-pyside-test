@@ -14,4 +14,4 @@ script:
     - python $WHEELHOUSE/pyside_postinstall.py -install
     # Smoke test
     - python -c "from PySide.QtGui import *"
-    - python sampleapp.py
+    - xvfb-run python sampleapp.py
