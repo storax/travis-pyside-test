@@ -13,5 +13,7 @@ script:
     # Post install needed for pyside wheel
     - python $WHEELHOUSE/pyside_postinstall.py -install
     # Smoke test
+    - Xvfb :0 -screen 0 1600x1200x32
+    - export DISPLAY=:0.0
     - python -c "from PySide.QtGui import *"
-    - xvfb-run python sampleapp.py
+    - python sampleapp.py
