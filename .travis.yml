@@ -7,7 +7,7 @@ python:
     - 3.4
 install:
     - export WHEELHOUSE=$PWD/wheelhouse
-    - buildpyside.sh
+    - bash buildpyside.sh
 script:
     - pip install -v -f $WHEELHOUSE --no-index pyside
     # Post install needed for pyside wheel
