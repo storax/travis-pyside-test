@@ -8,7 +8,7 @@ Travis Pyside Build Tests
 
 Testing travis and build configurations to run pyside on travis ci.
 
-The built wheels are available as a simple `Python package index <https://storax.github.io/travis-pyside-test/simple/>`_
+The built wheels are available as a simple `Python package index <https://storax.github.io/travis-pyside-test/simple/>`_.
 
 =====
 Usage
