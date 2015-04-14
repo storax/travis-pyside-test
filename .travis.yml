@@ -10,7 +10,11 @@ install:
 script:
 - bash test.sh
 after_success:
-- bash deploy.sh
+  if ([ ! -z "$TRAVIS_TAG" ]) && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
+    bash deploy.sh
+  else
+    echo "Will not deploy because not a tagged release!"
+  fi
 env:
   global:
   - GITHUBUSERNAME=storax

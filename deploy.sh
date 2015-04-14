@@ -12,4 +12,5 @@ cp $WHEELHOUSE/*.whl .
 dir2pi --no-symlink --normalize-package-names .
 git add -A
 git commit -m"Add PySide build ${TRAVIS_BUILD_NUMBER} to index."
+git pull origin gh-pages
 git push -q "https://${GITHUBTOKEN}@github.com/storax/travis-pyside-test.git" gh-pages
