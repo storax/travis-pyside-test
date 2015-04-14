@@ -14,5 +14,4 @@ after_success:
 env:
   global:
   - GITHUBUSERNAME=storax
-  - secure: wsl2biSHuB3zo7Owh2fA/G/Bb7yIeIAGmGxt1YiSTW3A7Mw/xGquQyRRzlvy+lSjS2T3wwoc+gJUmqioBgNtMJrgoMprStf02vLttksLWK068BfZB0BkQfmp92/09PE7/bxYcj+iFq32dgv+1uom1evybGlYWeh/YNKOOIX7Ba0=
-  - secure: Y6dlYzBi/BkSbD9Ny7LXsHqzPRd9keZQgwi0pMSSZLMy7IVmnDsbo9HsMTADz81yaqO1wN3B7HGvP5xDu+GUT1nsXeyFnmP164n88UyTPjTRbgSNjk9OlN+rDrA/UG02cqLRyh1wjv7SgJIy0ikJu1tGxLgsZhvCY8yj4xFrsMI=
+  - secure: c6ROZEYB7/GTuSyyCA5IptXfbz66GQo+/UiDvWZWNQIqT5g3SERLJOd3cObWQgRnEW6xaomZ3Vlqci83ZlK08a2kv387HdLBo+A+6GG/X19JCgRo7g6zajW0VaHXv+7Q2GhTdOvaaXID69jHNhOfjDKK/knKaOH5OTNmK3uZBYM=
