@@ -13,5 +13,6 @@ after_success:
 - bash deploy.sh
 env:
   global:
-    - GITHUBUSERNAME=storax
-    - secure: wsl2biSHuB3zo7Owh2fA/G/Bb7yIeIAGmGxt1YiSTW3A7Mw/xGquQyRRzlvy+lSjS2T3wwoc+gJUmqioBgNtMJrgoMprStf02vLttksLWK068BfZB0BkQfmp92/09PE7/bxYcj+iFq32dgv+1uom1evybGlYWeh/YNKOOIX7Ba0=
+  - GITHUBUSERNAME=storax
+  - secure: wsl2biSHuB3zo7Owh2fA/G/Bb7yIeIAGmGxt1YiSTW3A7Mw/xGquQyRRzlvy+lSjS2T3wwoc+gJUmqioBgNtMJrgoMprStf02vLttksLWK068BfZB0BkQfmp92/09PE7/bxYcj+iFq32dgv+1uom1evybGlYWeh/YNKOOIX7Ba0=
+  - secure: Y6dlYzBi/BkSbD9Ny7LXsHqzPRd9keZQgwi0pMSSZLMy7IVmnDsbo9HsMTADz81yaqO1wN3B7HGvP5xDu+GUT1nsXeyFnmP164n88UyTPjTRbgSNjk9OlN+rDrA/UG02cqLRyh1wjv7SgJIy0ikJu1tGxLgsZhvCY8yj4xFrsMI=
