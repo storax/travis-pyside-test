@@ -12,6 +12,6 @@ cp $WHEELHOUSE/*.whl travis-pyside-test
 dir2pi --no-symlink --normalize-package-names travis-pyside-test
 cd travis-pyside-test
 git add -A
-git commit -m"Add PySide build $TRAVIS_BUILD_NUMBER to index."
+git commit -m"Add PySide build ${TRAVIS_BUILD_NUMBER} to index."
 git remote set-url origin "https://${GITHUBUSERNAME}:${GITHUBPASSWORD}@github.com/stoax/travis-pyside-test.git"
 git push origin gh-pages
