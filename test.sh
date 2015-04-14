@@ -9,4 +9,4 @@ export DISPLAY=:0.0
 
 #test
 python -c "from PySide.QtGui import *"
-python samleapp.py
+python sampleapp.py
