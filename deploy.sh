@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo "Deploying"
 pip install pip2pi
 git clone https://github.com/storax/travis-pyside-test.git
 cd travis-pyside-test
