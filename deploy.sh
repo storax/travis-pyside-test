@@ -10,10 +10,8 @@ git config user.email "zuber.david@gmx.de"
 git config credential.helper "store --file=.git/credentials"
 > .git/credentials <<< "https://${GITHUBTOKEN}:@github.com"
 git checkout gh-pages
-cd ..
-cp $WHEELHOUSE/*.whl travis-pyside-test
-dir2pi --no-symlink --normalize-package-names travis-pyside-test
-cd travis-pyside-test
+cp $WHEELHOUSE/*.whl .
+dir2pi --no-symlink --normalize-package-names .
 git add -A
 git commit -m"Add PySide build ${TRAVIS_BUILD_NUMBER} to index."
 git push origin gh-pages
