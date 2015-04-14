@@ -1,14 +1,17 @@
-# Build pyside wheels for the travis worker
 language: python
 python:
-    - 2.7
-    - 3.3
-    - 3.4
+- 2.7
+- 3.3
+- 3.4
 install:
-    - sudo apt-get install -y xvfb
-    - export WHEELHOUSE=$PWD/wheelhouse
-    - bash buildpyside.sh
+- sudo apt-get install -y xvfb
+- export WHEELHOUSE=$PWD/wheelhouse
+- bash buildpyside.sh
 script:
-    - bash test.sh
+- bash test.sh
 after_success:
-    - bash deploy.sh
+- bash deploy.sh
+env:
+  global:
+    - GITHUBUSERNAME=storax
+    - secure: wsl2biSHuB3zo7Owh2fA/G/Bb7yIeIAGmGxt1YiSTW3A7Mw/xGquQyRRzlvy+lSjS2T3wwoc+gJUmqioBgNtMJrgoMprStf02vLttksLWK068BfZB0BkQfmp92/09PE7/bxYcj+iFq32dgv+1uom1evybGlYWeh/YNKOOIX7Ba0=
