@@ -19,7 +19,7 @@ tar xf $PYSIDE_TGZ
 cd $PYSIDE_DIR
 
 # Build wheel
-python setup.py bdist_wheel
+python setup.py bdist_wheel --standalone
 
 cp dist/*.whl $WHEELHOUSE
 cp pyside_postinstall.py $WHEELHOUSE
