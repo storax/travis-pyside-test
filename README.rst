@@ -60,3 +60,13 @@ Now create a virtual framebuffer, so PySide thinks there is a display device::
   # Create virtual frame buffer because we run on headless machine
   Xvfb :0 -screen 0 1600x1200x24 &
   export DISPLAY=:0.0
+
++++
+Tox
++++
+
+Tox requires you to explicitly pass the ``DISPLAY`` environment variable since version 2.0.
+
+You can add the following line to you tox configuration::
+
+  passenv = DISPLAY
