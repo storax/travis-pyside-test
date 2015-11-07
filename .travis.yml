@@ -6,12 +6,12 @@ python:
 install:
 - sudo apt-get install -y xvfb
 - export WHEELHOUSE=$PWD/wheelhouse
-- bash buildpyside.sh
+
 - bash buildpyside2.sh
 script:
 - Xvfb :0 -screen 0 1600x1200x24 &
 - export DISPLAY=:0.0
-- bash test.sh
+
 - bash test2.sh
 after_success:
 - bash deploy.sh
