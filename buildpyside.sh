@@ -4,7 +4,7 @@
 
 mkdir $WHEELHOUSE
 
-PYSIDE_VERSION=1.2.2
+PYSIDE_VERSION=1.2.4
 PYSIDE_DIR=PySide-${PYSIDE_VERSION}
 PYSIDE_TGZ=PySide-${PYSIDE_VERSION}.tar.gz
 
@@ -22,7 +22,6 @@ cd $PYSIDE_DIR
 python setup.py bdist_wheel --standalone
 
 cp dist/*.whl $WHEELHOUSE
-cp pyside_postinstall.py $WHEELHOUSE
 echo $WHEELHOUSE
 ls $WHEELHOUSE
 cd ..
