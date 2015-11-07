@@ -51,11 +51,7 @@ Setup on travis
 +++++++++++++++
 
 Now to finally use PySide on Travis-CI, you need some extra steps. First set the index like mentioned above. Then install PySide via pip (or if you are using tox, tox will do it for you).
-After installation you have to execute (you might need sudo rights)::
-
-  python pyside_postinstall.py -install
-
-Now create a virtual framebuffer, so PySide thinks there is a display device::
+Then create a virtual framebuffer, so PySide thinks there is a display device::
 
   # Create virtual frame buffer because we run on headless machine
   Xvfb :0 -screen 0 1600x1200x24 &
