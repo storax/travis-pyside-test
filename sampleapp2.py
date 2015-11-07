@@ -1,7 +1,7 @@
-from PySide2 import QtGui
+from PySide2 import QtWidgets
 
 if __name__ == '__main__':
-    app = QtGui.QApplication([])
-    mwin = QtGui.QMainWindow()
+    app = QtWidgets.QApplication([])
+    mwin = QtWidgets.QMainWindow()
     mwin.show()
     app.processEvents()
